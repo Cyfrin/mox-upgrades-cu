@@ -9,8 +9,12 @@ def set_number(new_number: uint256):
 
 @external
 def increment():
-    self.number += 1
+    self.number += 2
+
+@external 
+def decrement():
+    self.number -= 1
 
 @external
 def version() -> uint256:
-    return 1
+    return 2
