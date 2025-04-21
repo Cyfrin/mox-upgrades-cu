@@ -16,7 +16,6 @@ def deploy():
     print(f"Starting version: {proxy_with_abi.version()}")
 
     # Let's Upgrade!
-
     implementation_two = counter_two.deploy()
     proxy.upgrade_to(implementation_two)
 
